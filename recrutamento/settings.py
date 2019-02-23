@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['localhost', '192.168.78.167']
+ALLOWED_HOSTS = ['localhost', '192.168.78.167', 'roque-desafio-vagas.herokuapp.com']
 
 # Application definition
 
