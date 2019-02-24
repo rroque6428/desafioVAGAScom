@@ -1,26 +1,46 @@
 import math
 
+from .dijkstra import *
+
 from candidaturas.models import Candidatura
 
 def calcDistancia(candidatura):
     locVaga = candidatura.id_vaga.localizacao
     locPessoa = candidatura.id_pessoa.localizacao
-    return 100
+    return calcCityDistance(locVaga, locPessoa)
 
 def calcScore(id_candidatura):
     candidatura = Candidatura.objects.get(pk=id_candidatura)
     n = 100-25*abs(candidatura.id_vaga.nivel - candidatura.id_pessoa.nivel)
-    d = calcDistancia(candidatura)
-    candidatura.score = (n+d)/2
+    dist = calcDistancia(candidatura)
+    if   dist <= 5:  d = 100
+    elif dist <= 10: d = 75
+    elif dist <= 15: d = 50
+    elif dist <= 20: d = 25
+    else: d = 0
+    candidatura.score = round((n+d)/2)
     candidatura.save()
     return
 
-# def getMatrixOfDistances():
-#     cities_pairs = ['AB','BC','BD','CE','DE','DF']
-#     cities_distances = [5,7,3,4,10,8]
-#     m_dim = len(cities_pairs)
-#     m = [[0 for i in range(m_dim)] for j in range(m_dim)]
-
+# Some internal tests:
+# [(calcCityDistance(c1,c2), c1, c2) for c1 in 'ABCDEF' for c2 in 'ABCDEF']
+# [calcCityDistance(c1,c2) for c1 in 'ABCDEF' for c2 in 'ABCDEF']
+def calcCityDistance(e1, e2):
+    edges = [
+            ("A", "B", 5),
+            ("B", "C", 7),
+            ("B", "D", 3),
+            ("C", "E", 4),
+            ("D", "E", 10),
+            ("D", "F", 8),
+            ("E", "F", 18), # Added node
+            ("C", "D", 10), # Added node
+        ]
+    l_ = sorted([e1.upper(), e2.upper()]) # secure direction of search
+    e1 = l_[0]
+    e2 = l_[1]
+    return dijkstra(edges, e1, e2)[0]
+    
 # def generate_cities_coords():
 #     # Project cities in a line
 #     def get_relative_coord(distance):

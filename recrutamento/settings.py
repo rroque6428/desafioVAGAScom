@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['localhost', '192.168.78.167', 'roque-desafio-vagas.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '192.168.78.172', 'roque-desafio-vagas.herokuapp.com']
 
 # Application definition
 
@@ -136,7 +136,11 @@ MEDIA_ROOT = 'imagens'
 MEDIA_URL = '/media/'
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 20    
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+ 

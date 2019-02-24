@@ -45,14 +45,14 @@ class VagaViewSet(ModelViewSet):
 
     @action(methods=['get'], detail=True)
     def candidaturas(self, request, pk=None):   
-        queryset = Candidatura.objects.filter(id_vaga=pk).order_by('score')
+        queryset = Candidatura.objects.filter(id_vaga=pk).order_by('-score')
         serializer = CandidaturaSerializer(queryset, many=True)
         return Response(serializer.data)
 
     @action(methods=['get'], detail=True)
     def ranking(self, request, pk=None):
         # import pdb; pdb.set_trace() # - - - DEBUG
-        queryset = Candidatura.objects.filter(id_vaga=pk).order_by('score')
+        queryset = Candidatura.objects.filter(id_vaga=pk).order_by('-score')
         l_ = []
         for candidatura in queryset:
             dct_ = PessoaSerializer(candidatura.id_pessoa).data

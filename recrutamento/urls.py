@@ -15,21 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import RedirectView
 from rest_framework import routers
 
-from nivelexperiencia.api.viewsets import NivelExperienciaViewSet
+# from nivelexperiencia.api.viewsets import NivelExperienciaViewSet
 from vagas.api.viewsets import VagaViewSet
 from pessoas.api.viewsets import PessoaViewSet
 from candidaturas.api.viewsets import CandidaturaViewSet
 
 router = routers.DefaultRouter()
-router.register(r'niveis', NivelExperienciaViewSet)
+# router.register(r'niveis', NivelExperienciaViewSet)
 router.register(r'vagas', VagaViewSet)
-# router.register(r'vagas/candidaturas', VagaReportsViewSet)
 router.register(r'pessoas', PessoaViewSet)
 router.register(r'candidaturas', CandidaturaViewSet)
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='/v1/')),
     path('v1/', include(router.urls)),
+    # path('v1/vagas/', include('vagas.urls')),
     path('admin/', admin.site.urls),
 ]
