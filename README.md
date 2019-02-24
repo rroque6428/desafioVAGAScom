@@ -1,7 +1,7 @@
 # Resposta ao Desafio Técnico
 Resposta ao Desafio Técnico proposto pela equipe Vagas.com.
 
->"Um recrutador precisa analisar as candidaturas recebidas para vagas de emprego. Dado o grande volume de candidaturas em algumas vagas, olhar um a um seria um trabalho muito demorado. Seu papel aqui é ajudar o recrutador, indicando as pessoas mais aderentes para cada vaga. Para isso, crie uma API de acordo com as especificações ..."_
+>"Um recrutador precisa analisar as candidaturas recebidas para vagas de emprego. Dado o grande volume de candidaturas em algumas vagas, olhar um a um seria um trabalho muito demorado. Seu papel aqui é ajudar o recrutador, indicando as pessoas mais aderentes para cada vaga. Para isso, crie uma API de acordo com as especificações ..."
 
 ### Versões utilizadas no desenvolvimento
 * Linux Ubuntu 14.04 LTS 64bits
