@@ -21,7 +21,7 @@ candidaturas: https://roque-desafio-vagas.herokuapp.com/v1/candidaturas/
 ### Considerações
 Inicialmente gostaria de agradecer pela participação. Espero ter produzido uma solução com a robustez, flexibilidade e expansibilidade bem próximos do desejado.
 
-O Danjo evolui muito rápido e infelizmente não descobri como fazer para criar *exatamente* o endppoint para o ranking, mas eu criei um bem próximo. O resultado é o mesmo.
+O Django evolui muito rápido e infelizmente não descobri como fazer para criar *exatamente* o endppoint para o ranking, mas eu criei um bem próximo. O resultado é o mesmo.
 
 ### Gráfico de Nodes utilizado
 ![](./bak/graph.png)
