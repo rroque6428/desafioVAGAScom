@@ -1,5 +1,5 @@
 # desafioVAGAScom
-Resposta ao Desafio Técnico proposto por Vagas.com para o cargo de Eng. Software.
+Resposta ao Desafio Técnico proposto pela equipe Vagas.com.
 
 ## Versões utilizadas no desenvolvimento
 * Linux Ubuntu 14.04 LTS 64bits
@@ -16,5 +16,5 @@ pessoas:      https://roque-desafio-vagas.herokuapp.com/v1/pessoas/
 candidaturas: https://roque-desafio-vagas.herokuapp.com/v1/candidaturas/
 ```
 
-## Considerações
-Inicialmente 
+### Considerações
+Inicialmente gostaria de agradecer pela participação.
