@@ -1,7 +1,7 @@
 # Resposta ao Desafio Técnico
 Resposta ao Desafio Técnico proposto pela equipe Vagas.com.
 
-_"Um recrutador precisa analisar as candidaturas recebidas para vagas de emprego. Dado o grande volume de candidaturas em algumas vagas, olhar um a um seria um trabalho muito demorado. Seu papel aqui é ajudar o recrutador, indicando as pessoas mais aderentes para cada vaga. Para isso, crie uma API de acordo com as especificações..."_
+>"Um recrutador precisa analisar as candidaturas recebidas para vagas de emprego. Dado o grande volume de candidaturas em algumas vagas, olhar um a um seria um trabalho muito demorado. Seu papel aqui é ajudar o recrutador, indicando as pessoas mais aderentes para cada vaga. Para isso, crie uma API de acordo com as especificações ..."
 
 ### Versões utilizadas no desenvolvimento
 * Linux Ubuntu 14.04 LTS 64bits
@@ -9,9 +9,7 @@ _"Um recrutador precisa analisar as candidaturas recebidas para vagas de emprego
 * Django 2.0.4
 * DjangoRestFramework 3.9.1
 
-```
-Api Web disponível em https://roque-desafio-vagas.herokuapp.com
-```
+[Clique aqui para acessar a Api Web](https://roque-desafio-vagas.herokuapp.com) ou acesse diretamente via endpoints.
 
 ### Endpoints
 ```
@@ -23,7 +21,7 @@ candidaturas: https://roque-desafio-vagas.herokuapp.com/v1/candidaturas/
 ### Considerações
 Inicialmente gostaria de agradecer pela participação. Espero ter produzido uma solução com a robustez, flexibilidade e expansibilidade bem próximos do desejado.
 
-O Danjo evolui muito rápido e infelizmente não descobri como fazer para criar *exatamente* o endppoint para o ranking, mas eu criei um bem próximo. O resultado é o mesmo.
+O Django evolui muito rápido e infelizmente não descobri como fazer para criar *exatamente* o endpoint para o ranking, mas eu criei um bem próximo. O resultado é o mesmo.
 
 ### Gráfico de Nodes utilizado
 ![](./bak/graph.png)
