@@ -1,0 +1,32 @@
+{% extends "rest_framework/base.html" %}
+
+{% comment %}
+{% load static %} 
+{% block bootstrap_theme %}
+    <link rel="stylesheet" href="{% static "themes/bootstrap.min.css" %}" type="text/css">
+{% endblock %}
+{% endcomment %}
+
+{% comment %}
+{% block bootstrap_theme %}
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css" type="text/css">
+{% endblock %}
+{% endcomment %}
+{% comment %}
+{% block bootstrap_navbar_variant %}{% endblock %}
+{% endcomment %}
+
+{% block title %} API - Roque {% endblock %}
+
+{% block branding %}
+    <a class='navbar-brand' rel="nofollow" href='/'>
+        Desafio Vagas.com <span class="version">0.0.1</span>
+    </a>
+{% endblock %}
+
+<!-- This is a HTML comment and will be rendered -->
+{% comment %}
+    Multiple lines comment
+    This will not appear elsewhere
+{% endcomment %}
+{# Single line comment: This will not appear elsewhere#}
