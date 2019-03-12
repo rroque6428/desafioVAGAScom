@@ -20,7 +20,7 @@ $ python3 -m venv venv
 $ . venv/bin/activate
 (venv) $ pip install django==2.0.13  # Last release for python 3.4
 ```
-####Extras
+#### Extras
 Se 
 *** WINDOWS
 // Download Python 3.7 from https://www.python.org/downloads/windows
@@ -42,7 +42,7 @@ $ pip install ipython
 https://www.getpostman.com/downloads/
 
 ___
-###What Python version can I use with Django?
+### What Python version can I use with Django?
 
 Django     |Versão do Python                                       
 -----------|---------------------------------------------
@@ -51,25 +51,25 @@ Django     |Versão do Python
 2.1, 2.2   |3.5, 3.6, 3.7                                
 
 ### Pacotes úteis
-Não esqueça de ativar a [VirtualEnv](#step_virtual).
+Não esqueça de ativar a [VirtualEnv](#step_virtualenv).
 
-#####Fotos e Imagens com [Pillow](https://pillow.readthedocs.io/en/stable)
+##### Fotos e Imagens com [Pillow](https://pillow.readthedocs.io/en/stable)
 ```shell
 (venv) $ pip install Pillow   
 ```
-#####Criação de API's com [Django REST Framework](https://www.django-rest-framework.org)
+##### Criação de API's com [Django REST Framework](https://www.django-rest-framework.org)
 ```shell  
 (venv) $ pip install djangorestframework
 (venv) $ pip install django-filter
 ```
 
 
-###Referências
+### Referências
 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) | 
-[Django Releases](https://docs.djangoproject.com/pt-br/2.1/releases/) |
-[API's Test with Postman][Postman] |
-[API's Test with Httpie][HTTPie] |
+[Django Releases](https://docs.djangoproject.com/pt-br/2.1/releases/)  
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)   
+[Httpie][HTTPie]  
+[Postman][Postman]
 
 [Postman]: https://www.getpostman.com "Official Website"
 [HTTPie]: https://httpie.org "Official Website"
