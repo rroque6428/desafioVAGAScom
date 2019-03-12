@@ -5,4 +5,11 @@ from vagas.models import Vaga
 class VagaSerializer(ModelSerializer):
     class Meta:
         model = Vaga
+
         fields = ('id', 'empresa', 'titulo', 'descricao', 'localizacao', 'nivel')
+
+
+
+
+
+
